@@ -11,11 +11,11 @@ const diretory: ListProps = {
 
 const Directorybar = () => {
   return (
-    <div className="flex flex-col justify-start items-start gap-5">
+    <div className="flex flex-col justify-start items-start gap-5 h-screen">
       <div>
         <h1>{diretory.title}</h1>
       </div>
-      <div className="flex-col">
+      <div className="flex-col overflow-auto scrollbar-rounded-3xl scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-gray">
         {activeDirectory?.map((item, index) => (
           <Card key={index} {...item} />
         ))}

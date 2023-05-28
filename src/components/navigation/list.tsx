@@ -25,7 +25,7 @@ const List = ({ title, list, action }: ListProps) => {
           ""
         )}
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-auto scrollbar-rounded-3xl scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-gray">
         {list?.map((item, index) => (
           <Item key={index} icon={item.icon} title={item.title} />
         ))}

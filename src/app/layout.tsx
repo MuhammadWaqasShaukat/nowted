@@ -19,10 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="flex bg-black items-stretch text-white">
-          <div className="w-[300px] px-6 py-6 overflow-auto">
+          <div className="w-[300px] p-6">
             <Sidebar />
           </div>
-          <div className="p-6  bg-white/5">
+          <div className="w-[350px] p-6 bg-white/5">
             <Directorybar />
           </div>
 
